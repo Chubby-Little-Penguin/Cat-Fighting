@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload = 'initialize();'>
+    <div id="bodybackground">
+        <div class="container">            
+
+            <div class="gamezone">
+                <canvas id="canvas" width='300' height='150'>
+				</canvas>   
+            </div>
+
+            <div class="sidebar">
+
+                <h2>Fighting Cat</h2>
+
+                <div id="Player1"><h3>Player1:</h3>
+                    <canvas id="canvas1" width='40' height='7'>
+                    </canvas>  
+                    <h3>FC: </h3>
+                </div>
+
+                <p id="player2"><h3>Player2:</h3>
+                    <canvas id="canvas2" width='40' height='7'>
+                    </canvas> 
+                    <h3>FC: </h3>               
+                </p>
+                
+                <div class="corner">
+                    <img src="cat2left.png" alt="cat2left" style="size: 40px 60px;">
+                </div>
+                
+                <script src="game01_new.js"></script>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
