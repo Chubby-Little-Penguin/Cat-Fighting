@@ -45,6 +45,8 @@ div{
   height: 850px;
   width: 900px;
   border:solid;
+  background-image: url('static/zhuobu.jpg!con');
+  background-size: cover;
 }
 
 #canvas1 {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Cat</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body #rules {
+            display: none;
+            position: absolute;
+            top: 20px; /* 调整垂直位置 */
+            left: 20px; /* 调整水平位置 */
+            padding: 10px;
+            border: 1px solid black;
+            background-color: white; /* 添加背景色 */
+            z-index: 9999; /* 提高层级确保显示在其他元素之上 */
+        }
+    
+        body #rules.show {
+            display: block;
+        }
+    </style> -->
+</head>
+
+<body onload = 'initialize();'>
+    <div id="bodybackground">
+        <div class="container">            
+
+            <div class="gamezone">
+                <canvas id="canvas" width='300' height='150'>
+				</canvas>   
+            </div>
+
+            <div class="sidebar">
+
+                <h2>Fighting Cat</h2>
+
+                <div id="Player1"><h3>Player1:</h3>
+                    <canvas id="canvas1" width='40' height='7'>
+                    </canvas>  
+                    <div id = 'player1FCValue'>Player1_FC: 0</div>
+                </div>
+
+                <p id="player2"><h3>Player2:</h3>
+                    <canvas id="canvas2" width='40' height='7'>
+                    </canvas> 
+                    <div id = 'player2FCValue'>Player2_FC: 0</div>           
+                </p>
+                
+                <div class="corner">
+                    <img src="static/cat2left.png" alt="cat2left" style="size: 40px 60px;">
+                </div>
+
+                <button onclick="showRules()">Show Rules</button>
+                <button onclick="hideRules()">Hide Rules</button>
+
+                <div id="rules" style="display: none;">
+                    <h3>Game Rules</h3>
+                    <p>The game needs two players who control the two cats.</p>
+                    <p>The left cat is controlled by "q,w,a,s,d"</p>
+                    <p>q stands for closing and opening its mouth</p>
+                    <p>Similarly, the right one is controlled by "Space and 4 arrows"</p>
+                    <p>FC stands for cats' strength, which can be added by 2 through eating pizza, 5 by eating hamburger, and -3 by eating shit.</p>
+                    <p>Once the FC drops to 0, the cat die and the higher the delta of the FC, when 2 cats collides, the HP drops more</p>
+                    <p>The game also ends when HP drops to 0, which stands for the blood.</p>
+                    <p>When 2 cats collide, they will go back to the initial position.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showRules(){
+            document.getElementById('rules').style.display = 'block';
+            //console.log('show');
+        }
+
+        function hideRules(){
+            document.getElementById('rules').style.display = 'none';
+        }
+
+    </script>
+    
+    <script src="game01_new(8).js"></script>
+
+</body>
+
+</html>

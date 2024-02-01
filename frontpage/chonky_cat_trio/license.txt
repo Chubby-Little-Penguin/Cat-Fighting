@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chonky Cat Trio
+* source:	https://sketchfab.com/3d-models/chonky-cat-trio-d9a2d94179384803af7456d633283496
+* author:	Kanna-Nakajima (https://sketchfab.com/Kanna-nakajima)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chonky Cat Trio" (https://sketchfab.com/3d-models/chonky-cat-trio-d9a2d94179384803af7456d633283496) by Kanna-Nakajima (https://sketchfab.com/Kanna-nakajima) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
